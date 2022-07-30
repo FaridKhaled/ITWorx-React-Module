@@ -1,0 +1,27 @@
+img {
+    width: 300px;
+    height: 300px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexContainerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#thorDiv {
+    display: none;
+}
+
+[data-bs-toggle="offcanvas"] {
+    height: 2.5rem;
+}
+
+.offcanvas-body button {
+    height: 2.5rem;
+}
