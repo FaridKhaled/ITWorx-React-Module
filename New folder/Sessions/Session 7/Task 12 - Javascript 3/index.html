@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title> Third Javascript Task </title>
+
+        <link href="styles.css" rel="stylesheet">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+              integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+        />
+
+    </head>
+
+    <body>
+
+        <div class="globalContainer">
+
+            <header id="header">
+
+                <div class="flexContainerColumn">
+
+                    <p id="profileName"> <i class="fas fa-arrow-left"></i> &nbsp; Profile Name </p>
+
+                    <span id="numberOfTweets"> 125.7k Tweets </span>
+
+                </div>
+
+                <div class="flexContainer">
+
+                    <p id="themeName"> Light Theme </p>
+
+                    <label class="switch">
+
+                        <input type="hidden" name="toggle" value="lightTheme" />
+                        <input type="checkbox" name="toggle" id="toggle" value="darkTheme">
+                        <span class="slider round"></span>
+
+                    </label>
+
+                </div>
+
+            </header>
+
+            <div class="coverPhoto">
+
+                <img src="light-theme-cover-photo.png" id="coverphoto">
+
+            </div>
+
+            <!-- profile name, pic and edit until nav (tweets and likes) -->
+            <div class="flexContainerColumn" id="profileInfo">
+
+                <div id="ProfilePictureAndEditProfile">
+
+                    <img src="light-theme-image.png" id="profilePicture1">
+                
+                    <button id="editProfile"> Edit Profile </button>
+
+                </div>
+
+                <div id="profileNameAndUsername">
+
+                    <h2 id="profileName2"> Profile Name <i class="fas fa-check-circle verified"></i> </h2> 
+
+                    <span> @username </span>
+
+                </div>
+
+                <div class="flexContainerColumn" id="bio">
+
+                    <span> Your Bio Put Here </span>
+
+                    <span> 
+                        
+                        <i class="fas fa-map-marker-alt" id="Location"> Location </i> 
+                        <i class="far fa-calendar-alt"> Joined Since 2021 </i> 
+                           
+                    </span>
+
+                    <span> 
+                        <strong>256</strong> Following &nbsp; &nbsp; 
+                        <strong>165</strong> Followers
+                    </span>
+
+                </div>
+
+                <nav>
+
+                    <a> Tweets </a>
+
+                    <a> Tweets & replies </a>
+
+                    <a> Media </a>
+
+                    <a> Likes </a>
+
+                </nav>
+
+            </div>
+
+            <!-- Tweets -->
+            <div class="flexContainer" id="tweets">
+
+                <img src="light-theme-image.png" id="profilePicture2">
+
+                <div class="flexContainerColumn">
+
+                    <div id="tweet">
+
+                        <h3 id="profileName3"> Profile Name <i class="fas fa-check-circle verified"></i></h3>
+
+                        <span> &nbsp; @username &#183; 32m </span>
+
+                        <i class="fas fa-ellipsis-h" id="options"></i>
+
+                    </div>
+
+                    <p> 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Hic nihi fuit, quod quaerermus.
+                    </p>
+
+                    <div class="flexContainer" id="tweetActions">
+
+                        <span> <i class="far fa-comment"></i> 586k </span>
+
+                        <span> <i class="fas fa-retweet"></i> 75k </span>
+
+                        <span> <i class="far fa-heart"></i> 157 </span>
+
+                        <span> <i class="fas fa-external-link-alt"></i> </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <select id="changeBackground">
+
+                <option value=""> Select Background Color </option>
+
+                <option value="default"> Default </option>
+
+                <option value="yellow"> Yellow </option>
+
+            </select>
+
+        </div>
+
+        <script src="task12.js"></script>
+
+    </body>
+
+</html>

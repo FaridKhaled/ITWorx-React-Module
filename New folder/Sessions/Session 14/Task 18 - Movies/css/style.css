@@ -1,0 +1,24 @@
+.card {
+    height: 32rem !important;
+}
+
+.card img {
+    height: 70% !important;
+}
+
+.card :hover {
+    cursor: pointer;
+}
+
+li :hover {
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-body img {
+    width: 40% !important;
+}

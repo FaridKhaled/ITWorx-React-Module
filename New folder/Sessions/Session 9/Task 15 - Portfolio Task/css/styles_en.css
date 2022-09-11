@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+.ultimate_container {
+    width: 80%;
+    margin: auto;
+}
+
+nav a {
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline !important;
+    text-underline-offset: 1rem;
+    cursor: pointer;
+}
+
+#helloIam {
+    background-color: rgb(81, 220, 197);
+    color: white;
+    border-radius: 9999px 9999px 9999px 0;
+    display: inline-block;
+    width: 6rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+#alex {
+    width: 20rem;
+    height: 20rem
+}
+
+#AboutMeImg {
+    width: 25rem;
+    height: 25rem;
+}
+
+#AboutMe {
+    width: 50%;
+}
+
+#AboutMe span{
+    border: 2px solid rgb(81, 220, 197);
+    margin-right: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+#AboutMe button {
+    color: white;
+    background-color: rgb(81, 220, 197);
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border-radius: 99px;
+}
+
+#Skills {
+    margin-top: 10rem;
+}
+
+#Skills h3 {
+    margin-left: 30rem;
+}
+
+.card {
+    width: 30%;
+    height: 17rem !important;
+    padding: 1rem;
+}
+
+.card img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.card p {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.progress-bar {
+    /* width: 0%; */
+    color: rgb(81, 220, 197) !important;
+}

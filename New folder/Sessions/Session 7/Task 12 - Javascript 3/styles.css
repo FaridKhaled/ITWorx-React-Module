@@ -1,0 +1,262 @@
+@font-face {
+    font-family: "Chirp";
+    src: url("./Twitter\ Font/chirp-regular-web.woff") format("woff"),
+         url("./Twitter\ Font/chirp-medium-web.woff") format("woff"),
+         url("./Twitter\ Font/chirp-bold-web.woff") format("woff");
+}
+
+body {
+    font-family: 'Chirp';
+    background-color: rgb(68, 177, 246);
+}
+
+.globalContainer {
+    width: 50%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.flexContainerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+#profileName {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#numberOfTweets {
+    margin-left: 1.5rem;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.flexContainer {
+    display: flex;
+}
+
+#themeName {
+    color: gray;
+    size: 1rem;
+}
+
+/* start of dark/light theme slider button */
+
+.switch {
+    position: relative;
+    top: 15px;
+    left: 3px;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 1px;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: black;	
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* end of dark/light theme slider button */
+
+.coverPhoto {
+    height: 10rem;
+    width: 100%;
+}
+
+.coverPhoto img {
+    width: 100%;
+    height: 100%;
+}
+
+#profileInfo {
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+#ProfilePictureAndEditProfile {
+    
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+
+
+#profilePicture1 {
+    background-color: rgb(189, 146, 129);
+    border-radius: 50%;
+    border: 5px solid white;
+    height: 150px;
+    width: 150px;
+
+    position: relative;
+    bottom: 90px;
+    left: 20px;
+}
+
+#editProfile {
+    border-radius: 9999px;
+    background-color: white;
+    font-family: "Chirp";
+    font-weight: bold;
+    width: 13%;
+    height: 20px;
+    border: 1px solid gray;
+    margin-top: 5px;
+
+    /* position: relative;
+    left: 369px;
+    bottom: 165px; */
+}
+
+#profileNameAndUsername {
+    margin: 0 0 0 1.5rem;
+}
+
+#profileNameAndUsername h2 {
+
+    margin-bottom: 0;
+}
+
+#profileNameAndUsername span {
+
+    color: gray;
+}
+
+.verified {
+    color: rgb(10, 162, 245);
+}
+
+#bio {
+    margin: 1rem 0 0 1.5rem;
+}
+
+#bio span{
+    color: gray;
+    padding: 5px;
+}
+
+#bio strong {
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2rem 0 0 2rem;
+}
+
+nav a {
+    color: gray;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: rgb(10, 162, 245);
+}
+
+nav a:first-of-type {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: rgb(10, 162, 245);
+}
+
+#tweets {
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+#tweets h3 {
+    display: inline-block;
+}
+
+#tweets img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 1rem 0 0 1rem;
+}
+
+#tweet {
+    margin-left: 1rem;
+}
+
+#options {
+    color: gray;
+    margin-left: 13rem;
+}
+
+#tweets p {
+    color:gray;
+    margin: 0 0 1rem 1rem;
+}
+
+#tweetActions {
+    margin: 0 0 2rem 1.5rem;
+    justify-content: space-between;
+    width: 80%;
+}
+
+select {
+    margin: 4rem 0 4rem 0;
+    font-family: "Chirp";
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+}

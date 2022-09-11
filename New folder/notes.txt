@@ -1,0 +1,515 @@
+Session 1:
+
+css float behaviour
+classes vs generic
+boxsizing
+BEM / naming convenstions
+
+-----------------------------------------------------------------------------------------------
+Session 2:
+
+sprite image / apply background image to div (placeholder) and manipulate background-position in the sprite 
+	image and move x,y to get the exact image you want
+
+navbar using list is the safest
+
+display property
+
+flexbox is relation between parent component and child component
+
+justify-content vs align-items
+
+flex-grow: assign remaining of space to the child having this property (item(s) occupying more space than others)
+
+flex-wrap
+
+align-content: when there are multiple lines of items in the flex container, align those lines
+
+align-self: property for an item inside a flex container (ex: "align-self: center;")
+
+.flex-item:nth-child(n): targets a specific item which is the nth child of the flex container
+
+order property: every child of a flex container has a property 'order' that is by default 0. all of the items 
+have default value 0. changing the value for an item changes its order and ultimately its position.
+The 0 is a property not an index. 
+ex: three boxes, give the second one (middle) "order: 1;" it is displayed at the end of the queue.
+
+flex shrink
+
+--------------------------------------------------------------------------------------------------------------
+Session 3:
+
+float clear
+
+CSS Grid
+
+gutter: inner space between rows and columns in grid
+
+fr (unit): fraction
+
+repeat() notation
+
+Item positioning
+
+justify-items (x-axis), align-items: (y-axis) 
+
+align-items: start; will make the rendering stop at the content height rather than fill up the whole cell 
+like the default (which is stretch)
+
+minmax
+
+gap: 30px; add 30px space between grid items (in the gutter)
+
+fallback, browser hacks(targeting)
+
+caniuse.com
+
+---------------------------------------------------------------------------------------------------------------
+Session 5:
+
+clip path (for ellipse border)
+
+font face (using custom font)
+
+animation in css in repeat
+
+---------------------------------------------------------------------------------------------------------------
+Session 6:
+
+Introduction to javascript
+event listener
+
+---------------------------------------------------------------------------------------------------------------
+Session 7:
+
+e.stopProbagation
+
+event bubble
+
+capture (value in options argument), start event bubble from body then probagate normally
+
+event.preventDefault 
+
+jQuery
+
+---------------------------------------------------------------------------------------------------------------
+Session 8:
+
+Introduction to jQuery
+
+$(document).ready() {}
+
+encodeURIComponent
+
+performance, SEO, security
+
+CSS data attribute
+
+JS O'Reilly, head first javascript, eloquent javascript (books), JSbooks.com
+
+window.myVariable, window is a variable allowing acces to global scope
+
+function expression
+
+Global scope
+
+local scope
+
+compiling, two path system
+
+---------------------------------------------------------------------------------------------------------------
+Session 9: 
+
+Lexical scope
+
+Functions scope
+
+( function greeting () { ...... } ) ();  function inside parentheses () IIFE
+
+let & const makes block scope, but var is global scope; by default in js, blocks are global scope unless
+let or const are used which both turn scope to block scope
+
+Block scope
+
+IIFE inside for loop or let i =0; i++ instead of var i = 0; i++ makes block scope, each iteration creates new 
+scope with new bucket
+
+variable defined with const keyword cannot be REASSIGNED, it does not mean a constant value that can never 
+be changed. Furthermore, if it is a primitive value, it became a real constant and can never be changed, since 
+any change would resolve to a reassign(?), but on structures or objects it can be manipulated without being 
+reassigned.
+
+closures; when the function keeps access to variables in the lexical scope even when being executed in another 
+context. Also, the garbage collector won't delete a reference to a variable that was referenced in a function in 
+its lexical scope.
+
+modules
+
+--------------------------------------------------------------------------------------------------------------------
+Session 10:
+
+Object Oriented programming in javascript
+
+this, prototype, class[], inheritance vs behavior delegation, Objects Oriented (Class Based) & 
+OLOO (Object Linked to Other Objects) {this acronym (OLOO) is from 'you don't know javascript' book}
+
+this: every function, while executing, has a reference to its current context through 'this' 
+
+this-aware function
+
+default binding, implicit binding
+
+explicit binding: call(), hard binding: bind(), apply()
+
+"new" binding (AKA constructor call): new: 1) create a new empty object 2) Link that object to another object 
+3) Call function with this set to the new object 4) if the function doesn't return an object, it returns this
+
+arrow function doesn't identify 'this' as a special keyword. If 'this' occured in an arrow function, the fn 
+treats it like a variable and starts trying to resolve a value for it searching in its lexical scope. The global 
+scope (window) has 'this' in it by default, which means default this = window.
+
+if default binding happens, and the function does not find a value for this, it goes directly to the default 
+this (Window, global scope) 
+
+-----------------------------------------------------------------------------------------------------------------
+Session 11:
+
+Inheritance in javascript
+
+each function has a property called prototype that is linked to the .prototype object that is ultimately linked 
+to the parent object
+
+.prototype object has a property called constructor that is linked to the function
+
+constructor is a property NOT a function
+
+prototype chain
+
+var x = new Foo("a");
+
+__proto__ property to access the prototype chain equivalent to Object.getPrototypeOf()
+
+Object.create()
+
+prototypes shadowing
+---------------------------------------------------------------------------------------------------------------------
+Session 12: 
+
+Introduction to MVC 
+---------------------------------------------------------------------------------------------------------------------
+Session 13:
+
+design patterns
+
+Local storage code, saving current state
+
+try to keep track of state using controller, where the model would be a reflection of it
+
+DOM manipulation is expensive. In a large project, many DOM manipulations will affect performance
+
+modules pattern / modular javascript / "Publish and Subscribe", functionalities are broken down to modules 
+connected by a Mediator which manages changes in any of them (or all)
+
+MVC does not have to have separate objects for model & view & controller, another way when we have modules, 
+each module will have functionality of mvc within it
+
+Template Engine (ex: Mustache)
+
+* put html in <script> tag with type="text/template", it won't be rendered
+
+Event Mediator
+
+Revealing module pattern
+
+Intro to AJAX
+
+* newsapi.org , restcountries.eu
+
+XMLHttpRequest
+-----------------------------------------------------------------------------------------------------------------
+Session 14:
+
+* Object.keys , map function, splice function
+
+S.O.L.I.D principles
+
+ECMAscript 6 
+
+arrow function, template literals 
+
+gather & spread operator (or rest operator) (...args), 
+spread operator (ex: var str = 'Hello'; [...str]; //['H','e','l','l','o'] ) & other uses with object
+ 
+object destructuring
+
+classes
+
+-----------------------------------------------------------------------------------------------------------------
+Session 15:
+
+Continue walk-through of ECMAScript
+
+for...in statement (ES6) , for...of
+
+array.entries(), next()
+
+fetch()
+
+Promise.all(); wait for all open promises to resolve before executing .then(responses[])
+
+promise chaining: ex. when we return a promise from .then()
+
+callback hell
+
+async await
+
+Classes
+
+super()
+
+modules
+
+wheelbarrow
+
+------------------------------------------------------------------------------------------------------------------
+Session 16:
+
+Introduction to React
+
+The React Ecosystem
+
+Babel, Babel rc file, WebPack
+
+Babel *transpires* JSX code into plain old javascript
+
+NPM
+
+package: a collection of reusable modules 
+
+Dependencies, packages that are used in the project and we rely on, found in PACKAGE.JSON
+
+Package.json: a standard file that contains project metadata and dependencies 
+(scripts: ex: "start":"react-scripts start", a command defined to run a task, start in this case)
+
+package version: "^5.16.5", first number: major version, second number: minor release, third number: patch
+^ (carret): get latest update of SAME major release or ~ (tilde), get latest available update 
+
+Introduction to WebPack, Module Bundler
+
+SASS (Self Study)
+
+Packages can be installed globally (with flag "-g") to be installed globally on the machine and added to every 
+project. (NPX?)
+
+VSCode extension: React Standard Style code snippets
+
+Chrome Extension: React Developer Tools
+
+React components MUST start with a capital letter, otherwise react will regard it as a normal html tag not a 
+component
+
+JSX!!
+
+Storybook tool
+
+Hot module replacement
+
+-----------------------------------------------------------------------------------------------------------------
+Session 17:
+
+Passing properties (props)
+
+super() call must be first thing in constructor() of a class component IF we want to set initial values 
+(ex: this.name, this.state) and use 'this' in the constructor
+
+if we are not using constructor and not initializing initial values in it then our component is basically a 
+function component, we did not use functionality of class component, we can change it to a function component
+
+state
+
+(github copilot)
+
+TASK: prop types
+
+component mount
+
+component life cycle
+
+fetch in componentDidMount()
+
+DAN ABRAMOV, react component lifecycle graph
+
+-----------------------------------------------------------------------------------------------------------------
+Session 18 (Online - Zoom):
+
+react bootstrap, material ui, react strap
+
+reusable components code patterns
+
+higher order function
+
+functional programming
+
+higher order component (name convention: with-*)
+
+-----------------------------------------------------------------------------------------------------------------
+Session 19:
+
+Beware when using a higher order component, the child component passed to it need to be sure that its props are 
+correctly passed to it through the higher order component itself 
+
+inversion of control (drawback of higher order component)
+
+renderProp (ex: 'children' prop)
+
+react hooks
+
+react fragment
+
+Microsoft Visual Studio Essentials
+
+Forms
+
+Refs
+
+Formik
+
+local storage (Window.localStorage) Bonus in Books Task
+
+--------------------------------------------------------------------------------------------------------------------
+Session 20:
+
+State uplifitng
+
+Context; pass data (state) across components tree (or hierarchy) through provider,consumer way
+
+Routing
+
+Ex: we have book id that the router changes in the url, we use componentDidUpdate() to make our changes
+
+build for deployment
+
+Styled component
+
+Storybook
+
+Elementary OS
+
+------------------------------------------------------------------------------------------------------------------
+Session 21:
+
+Hooks
+
+class field
+
+Hooks: adds State, lifecycle methods & sharing non-visual logic to functional components
+
+useState hook: const [books, setBook] = React.useState([]);
+                        ^       ^			^
+		    value  Setter function   <	   Expects initial value 
+					  (Returns array)
+We don't need to provide the logic for the setter function, it is ready to use after useState call
+
+Hooks must be called initially on a higher level scope
+
+useEffect hook: to mimic lifecycle methods of class components
+
+if useEffect has no dependencies, it will be called only once after render, but with dependencies, it will 
+be called upon change of this dependency
+
+useEffect also must be on a top level scope, we cannot wrap it in an if-else block per se
+
+clean up effects of useEffect by returning a callback function that handles the clean up logic
+
+custom hooks
+
+------------------------------------------------------------------------------------------------------------------
+Session 22: (Online - Zoom)
+
+Setting a function as the default value for useState() ( ex: useState(getInitialBooks()) ) will result in this 
+function executing again with every render trigger (passing its reference like this ^). However, providing a 
+callback function for useState (ex: useState( () => {} ) ) will be called only once.
+
+useMemo() hook
+
+useCallBack() hook
+
+-----------------------------------------------------------------------------------------------------------------
+Session 23: 
+
+(Context API)
+
+Redux : Single source of truth, the Store
+
+Flux pattern
+
+Redux: reducer + flux
+
+pure function
+
+reducer must be a pure function
+
+ALL reducer functions will be called whenever an action fires (is dispatched)
+
+pattern dictates that an OBJECT (which describes change in the state) is sent to the dispatcher 
+
+-----------------------------------------------------------------------------------------------------------------
+Sessin 24 (Online - Zoom):
+
+Redux continued..
+
+Middleware
+
+Currying
+
+Javascript.info
+
+next session: React with Redux and Typescript
+
+-----------------------------------------------------------------------------------------------------------------
+Session 25:
+
+Redux thunk
+
+Redux with React (React Redux)
+
+------------------------------------------------------------------------------------------------------------------
+Session 26:
+
+material table
+
+picsum (like lorem ipsum)
+
+Tailwind
+
+Typescript
+
+Typescript Interface (IProps, IState)
+
+React testing library (embedded by default when useing create-react-app)
+
+(test driven development)
+
+convention: {component name}.test.js / .ts
+
+-----------------------------------------------------------------------------------------------------------------
+Session 27:
+
+Review: html & css, intro to JS (bom, dom, runtime, node, browser, event listening, datatypes), advanced JS 
+(scopes, lexical scope, prototype model), advanced JS Part2 (patterns, mvc, pub-sub, module), ECMAscript, 
+Tooling (webpack, ...), Intro to React & Redux (combine everything learned)
+
+Topics to learn yet: CSS Container Queries 
+
+
+
+
+
+
+
+
+
+
+
+
+

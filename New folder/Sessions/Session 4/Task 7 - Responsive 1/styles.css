@@ -1,0 +1,100 @@
+@media (max-width: 600px){
+    .lower_container {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 750px;
+    }
+
+    .container {
+        height: 350px !important;
+    }
+
+    .upper_container p {
+        width: 55% !important;
+    }
+}
+
+body {
+    background: rgb(250,250,250);
+    font-family: 'Poppins', sans-serif;
+}
+
+.upper_container {
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.light {
+    font-weight: 200;
+}
+
+h2 {
+    margin: 0.1em;
+}
+
+.upper_container p {
+    color: gray;
+    font-size: 13px;
+    width: 35%;
+}
+
+.lower_container {
+    display: flex;
+    width: 80%;
+    margin: 0px auto 60px auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 13rem;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0em 0.4em 1em rgb(223, 231, 241);
+    padding: 1em;
+    gap: 0em 0em 10em;
+}
+
+img {
+    max-width: 30%;
+    max-height: 30%;
+    align-self: flex-end;
+    margin: 2rem 0.5rem 2rem 0rem;
+}
+
+.card p {
+    margin: 0px;
+    font-size: 10px;
+}
+
+.card h5 {
+    margin: 0em 0em 0.7em 0em;
+}
+
+.supervisor_card {
+    border-top: 5px solid rgb(79, 203, 201);
+}
+
+.team_card {
+    border-top: 5px solid rgb(227, 92, 88);
+}
+
+.karma_card {
+    border-top: 5px solid rgb(239, 174, 84);
+}
+
+.calculator_card {
+    border-top: 5px solid rgb(87, 156, 223);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 360px;
+}

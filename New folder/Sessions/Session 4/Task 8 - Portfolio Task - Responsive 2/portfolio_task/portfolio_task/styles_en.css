@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+:root {
+    --bs-body-font-family: 'Poppins', sans-serif;
+}
+
+.ultimate_container {
+    width: 80%;
+    margin: auto;
+}
